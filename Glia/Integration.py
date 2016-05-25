@@ -14,8 +14,9 @@ def integrate(fun, start, end):
     area = 0
     while intercept < end:
         intercept += step
-        ''' your work here '''
+        height = fun(intercept)
+        area += height * step
     return area
      
-print(integrate(anonymous, 0, 10)) 
+print(integrate(anonymous, 0, 10)) #358.65099999999904
  
